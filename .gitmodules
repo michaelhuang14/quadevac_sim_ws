@@ -1,0 +1,30 @@
+[submodule "Menge"]
+	path = Menge
+	url = https://github.com/michaelhuang14/Menge.git
+[submodule "catkin_ws/src/gazebo_ros_pkgs"]
+	path = catkin_ws/src/gazebo_ros_pkgs
+	url = https://github.com/ros-simulation/gazebo_ros_pkgs.git
+	branch = kinetic-devel
+[submodule "catkin_ws/src/hector_gazebo"]
+	path = catkin_ws/src/hector_gazebo
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_gazebo
+	branch = kinetic-devel
+[submodule "catkin_ws/src/hector_localization"]
+	path = catkin_ws/src/hector_localization
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_localization
+	branch = catkin
+[submodule "catkin_ws/src/hector_models"]
+	path = catkin_ws/src/hector_models
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_models
+	branch = kinetic-devel
+[submodule "catkin_ws/src/hector_quadrotor"]
+	path = catkin_ws/src/hector_quadrotor
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_quadrotor
+	branch = kinetic-devel
+[submodule "catkin_ws/src/hector_slam"]
+	path = catkin_ws/src/hector_slam
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_slam
+	branch = catkin
+[submodule "catkin_ws/src/menge_gazebo"]
+	path = catkin_ws/src/menge_gazebo
+	url = https://github.com/michaelhuang14/menge_gazebo

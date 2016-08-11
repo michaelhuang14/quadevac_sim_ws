@@ -1,5 +1,5 @@
 # simons_project_ws
-Main work space for my project done at [Simons Summer Research Program] (http://www.stonybrook.edu/simons/).
+Main workspace for my project done at [Simons Summer Research Program] (http://www.stonybrook.edu/simons/).
 
 See the [poster](https://github.com/michaelhuang14/simons_project_ws/blob/master/SimonsPosterFinal.pdf) for summary of the project.
 
@@ -11,10 +11,16 @@ As the project uses latest [ROS](http://wiki.ros.org/) distribution (kinetic), a
 3. [hector_gazebo] (https://github.com/tu-darmstadt-ros-pkg/hector_gazebo)
 4. [hector_localization]( https://github.com/tu-darmstadt-ros-pkg/hector_localization)
 5. [hector_models](https://github.com/tu-darmstadt-ros-pkg/hector_models)
-6. [hector_quadrotor](https://github.com/tu-darmstadt-ros-pkg/hector_models)
+6. [hector_quadrotor](https://github.com/tu-darmstadt-ros-pkg/hector_quadrotor)
 5. [hector_slam]( https://github.com/tu-darmstadt-ros-pkg/hector_slam)
 6. [menge_gazebo](https://github.com/michaelhuang14/menge_gazebo)
 
 ## External Dependencies
 1. [Gazebo development branch] (https://bitbucket.org/osrf/gazebo)
+   * See build instructions [here](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) on additional dependencies.
+   * Gazebo should be built and installed from source.
 2. Ubuntu 16.04
+3. [ROS kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+   * Do not install full desktop version (ros-kinetic-desktop-full) that includes gazebo7 binaries
+   * Only install ros-kinetic-desktop or less
+4. Other ROS dependencies can be satisfied by running "rosdep install --from-paths . --ignore-src --rosdistro kinetic -y" from "catkin_ws" directory 
