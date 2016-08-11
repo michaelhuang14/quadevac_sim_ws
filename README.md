@@ -1,7 +1,7 @@
 # simons_project_ws
 Main work space for my project done at [Simons Summer Research Program] (http://www.stonybrook.edu/simons/).
 
-See the poster under docs for summary of the project.
+See the [poster](https://github.com/michaelhuang14/simons_project_ws/blob/master/SimonsPosterFinal.pdf) for summary of the project.
 
 As the project uses latest [ROS](http://wiki.ros.org/) distribution (kinetic), and latest [Gazebo simulator](http://gazebosim.org/) built from source code,  many ROS packages used by the project are either unavailable in binary form or incompatible with the new Gazebo during the time frame of the project. This workspace serves as a holding area that includes many other components as git submodules. Note some of these submodule may be removed once they are available in compatible binary form
 
