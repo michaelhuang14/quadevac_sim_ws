@@ -1,4 +1,4 @@
-# simons_project_ws
+# Quadcopter Assisted Evacuation Simulation Work Space
 Main workspace for my project done at [Simons Summer Research Program] (http://www.stonybrook.edu/simons/).
 
 See the [poster](https://github.com/michaelhuang14/simons_project_ws/blob/master/SimonsPosterFinal.pdf) for summary of the project.
@@ -23,4 +23,28 @@ As the project uses latest [ROS](http://wiki.ros.org/) distribution (kinetic), a
 3. [ROS kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
    * Do not install full desktop version (ros-kinetic-desktop-full) that includes gazebo7 binaries
    * Only install ros-kinetic-desktop or less
-4. Other ROS dependencies can be satisfied by running "rosdep install --from-paths . --ignore-src --rosdistro kinetic -y" from "catkin_ws" directory 
+4. Other ROS dependencies can be installed by running "rosdep install --from-paths . --ignore-src --rosdistro kinetic" from "catkin_ws" directory 
+   * ignore all gazebo related packages and answer "no" when prompted for confirming installation
+
+## Steps to Build and Run
+1. Follow [ROS kinetic installation instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu) on Ubuntu to install *ros-kinetic-desktop* package
+2. Follow instructions [here](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) to download source, build and install gazebo
+3. clone this repo including submodules
+   * git clone --recursive https://github.com/michaelhuang14/simons_project_ws.git
+4. build menge
+   * cd simons_project_ws/Menge/projects/g++
+   * make debug
+5. build all ros packages in this repo
+   * cd simons_project_ws/catkin_ws
+   * rosdep install --from-paths . --ignore-src --rosdistro kinetic
+   * catkin_make
+6. Setup environment
+   * in catkin_ws dir: source devel/setup.bash && source env_setup.sh
+7. Run the simulation
+   * in same terminal as step 6: roslaunch menge_hector_quadroto_demo menge_quadrotor_rand.launch
+8. control the quadcopter in simulation:
+   * in separate terminal repeat step 6 to setup environment
+   * then in the same terminal run one of following.
+   - roslaunch hector_quadrotor_teleop logitech_gamepad.launch (you need plugin a logitech gamepad to use this)
+   -  rosrun teleop_twist_keyboard teleop_twist_keyboard.py (see instructions [here](http://wiki.ros.org/teleop_twist_keyboard))
+
