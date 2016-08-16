@@ -68,7 +68,8 @@ Create a ROS package with the name of your plugin. Copy and paste the contents o
 
 For now, obstacles and buildings need to be specified in both menge and gazebo xml files. The gazebo world files are located in catkin_ws/src/menge_gazebo/menge_gazebo_worlds/worlds, while obstacles are stored in the scene specification xml (nameS.xml) for each scenario in the Menge/examples/core/ directory. When creating the gazebo world file make sure you link the correct plugin library to the scene. For example, in the case of menge_rand.world, I have specified the library of menge_plugin_randomized in the world file.
 All agent parameters such as personal space or mass or turning bias, as well as the quantity and spawn formation of crowds are specified in the scene xml files of each scenario, while crowd behavior, transitions, states, and goalsets are specified in the behavior xml files (nameB.xml) of each scenario. All of these xml files are located in the Menge/examples/core/ directory.
-Runnning the Simulation
+
+### Runnning the Simulation
 
 Once all launch files, plugin code, menge specifications have been completed and built, roslaunch menge_hector_quadrotor_demo yourlaunchfile.launch in the catkin_ws directory.
 
