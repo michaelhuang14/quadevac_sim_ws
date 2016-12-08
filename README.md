@@ -29,7 +29,7 @@ As the project uses latest [ROS](http://wiki.ros.org/) distribution (kinetic), a
 
 ## Steps to Build and Run
 1. Follow [ROS kinetic installation instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu) on Ubuntu to install *ros-kinetic-desktop* package
-2. Follow instructions [here](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) to download source, build and install gazebo. 
+2. Follow instructions [here](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) to download modified source mentioned above, build and install SDFormat, gazebo. 
 3. clone this repo including submodules
    * git clone --recursive https://github.com/michaelhuang14/quadevac_sim_ws
 4. build menge
