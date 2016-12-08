@@ -16,9 +16,10 @@ As the project uses latest [ROS](http://wiki.ros.org/) distribution (kinetic), a
 6. [menge_gazebo](https://github.com/michaelhuang14/menge_gazebo)
 
 ## External Dependencies
-1. [Gazebo development branch] (https://bitbucket.org/osrf/gazebo)
+1. [Gazebo modified for hardware skinning] (https://bitbucket.org/michaelhuang16/gazebo)
    * See build instructions [here](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) on additional dependencies.
    * Gazebo should be built and installed from source.
+   * SDFormat also modified to support instanced_actor model with hardware skinning. You can download the modified version from [here](https://bitbucket.org/michaelhuang16/sdformat2).
 2. Ubuntu 16.04
 3. [ROS kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
    * Do not install full desktop version (ros-kinetic-desktop-full) that includes gazebo7 binaries
@@ -28,9 +29,9 @@ As the project uses latest [ROS](http://wiki.ros.org/) distribution (kinetic), a
 
 ## Steps to Build and Run
 1. Follow [ROS kinetic installation instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu) on Ubuntu to install *ros-kinetic-desktop* package
-2. Follow instructions [here](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) to download source, build and install gazebo
+2. Follow instructions [here](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) to download source, build and install gazebo. 
 3. clone this repo including submodules
-   * git clone --recursive https://github.com/michaelhuang14/simons_project_ws.git
+   * git clone --recursive https://github.com/michaelhuang14/quadevac_sim_ws
 4. build menge
    * cd simons_project_ws/Menge/projects/g++
    * make debug
